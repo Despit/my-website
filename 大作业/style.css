@@ -1,0 +1,45 @@
+/*
+ * @Author: Eugene
+ * @Date: 2019-11-20 08:37:55
+ * @LastEditors: Eugene
+ * @LastEditTime: 2019-11-26 20:51:55
+ * @FilePath: \大作业\style.css
+ */
+
+#name {
+    font-family: Agency FB;
+    font-size: xxx-large;
+    color: rgb(255, 255, 255);
+    width: 400px;
+    height: 110px;
+    padding-left: 70px;
+    padding-top: 230px;
+    text-align: center;
+
+}
+
+#title {
+    background-image: url(portal.jpg);
+    margin: 10px auto;
+    width: 1503px;
+    height: 740px;
+}
+
+#album {
+    position: relative;
+    padding: 10px 10px;
+    content: 400px 350px;
+    top: 145px;
+}
+
+.album {
+    color: seagreen;
+    text-align: center;
+}
+
+.avator {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
