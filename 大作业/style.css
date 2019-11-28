@@ -2,7 +2,7 @@
  * @Author: Eugene
  * @Date: 2019-11-20 08:37:55
  * @LastEditors: Eugene
- * @LastEditTime: 2019-11-27 20:50:09
+ * @LastEditTime: 2019-11-28 20:58:01
  * @FilePath: \大作业\style.css
  */
 
@@ -11,12 +11,22 @@
     font-size: xxx-large;
     color: rgb(255, 255, 255);
     width: 400px;
-    height: 110px;
-    padding-left: 180px;
+    height: 63px;
+    padding-left: 190px;
     padding-top: 230px;
     text-align: center;
     position: relative;
 
+}
+
+#info {
+    width: 362px;
+    height: 45px;
+    padding-top: 10px;
+    padding-left: 295px;
+    text-align: left;
+    font-family: BlackAdder ITC;
+    font-size: xx-large;
 }
 
 #title {
@@ -41,15 +51,67 @@
     border-radius: 50%;
 }
 
-.box2{
+.box2 {
     width: auto;
     height: 750px;
+    position: relative;
 }
 
-#animationArrow{
+#animationArrow {
+    position: absolute;
+    padding-left: 470px;
+    padding-top: 240px;
+    width: auto;
+    height: auto;
+    animation: move 1.25s ease-in-out infinite;
+}
+
+@keyframes move {
+    10% {
+        transform: translateY(0px);
+    }
+
+    20% {
+        transform: translateY(1.25px);
+    }
+
+    30% {
+        transform: translateY(3.75px);
+    }
+
+    40% {
+        transform: translateY(6.5px);
+    }
+
+    50% {
+        transform: translateY(7.5px);
+    }
+
+    60% {
+        transform: translateY(7.5px);
+    }
+
+    70% {
+        transform: translateY(6.5px);
+    }
+
+    80% {
+        transform: translateY(3.75px);
+    }
+
+    90% {
+        transform: translateY(1.25px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.album {
     position: relative;
-    padding-left: 200px;
-    width: 450px;
-    height: 300px;
-    transform:translateY(60%) ;
+    border: 2px solid red;
+    width: 650px;
+    height: 433px;
+    margin: 50px 35px;
 }
