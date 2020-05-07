@@ -2,7 +2,7 @@
  * @Author: Eugene
  * @Date: 2019-11-18 13:37:28
  * @LastEditors: Eugene
- * @LastEditTime: 2019-11-28 20:54:02
+ * @LastEditTime: 2019-12-03 18:25:39
  * @FilePath: \大作业\index.html
  -->
 
@@ -15,29 +15,126 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Home Page</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Pic</title>
+    <script>
+        var banners = ["001.jpg", "002.jpg", "hello world.jpg"];
+        var counter = 0;
+
+        function run() {
+            setInterval(cycle, 2000);
+        }
+
+        function cycle() {
+            counter++;
+            if (counter == banners.length)
+                counter = 0;
+            document.getElementById("pic").src = banners[counter];
+        }
+    </script>
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        li {
+            float: right;
+        }
+
+        a:link,
+        a:visited {
+            text-decoration: none;
+            margin: 10px;
+            color: black;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            margin: 10px;
+            color: black;
+        }
+
+        a:visited {
+            text-decoration: none;
+            margin: 10px;
+            color: black;
+        }
+    </style>
+
 </head>
 
-<body>
-    <div id="title">
-        <div id="name">
-            Eugene·Adam
+<body onload="run();">
+    <div class="slogan">
+        Smart, wise, intelligent and erudite.
+    </div>
+    <div class="navigation">
+        <ul id="ul">
+            <li id="li"><a href="index.html#contact">Contact Me</a></li>
+            <li id="li"><a href="Chronology.html">Chronology</a></li>
+            <li id="li"><a href="info.html">Info</a></li>
+            <li id="li"><a href="index.html">HomePage</a></li>
+        </ul>
+    </div>
+    <div id="bg">
+        <div id="title">
+            <div id="name">
+                <a href="info.html" style="text-decoration: none;color: white;">Eugene·Adam</a>
+            </div>
+            <div id="text1">
+                <p>名字随InSight号火星车驻扎火星</p>
+                <p>霍格沃兹拉文克劳学院二年级在读</p>
+                <p>2008年感动中国年度人物特别奖得主</p>
+                <p>2006年《时代周刊》年度风云人物得主</p>
+            </div>
+            <div class="avator">
+                <img id="img-circle" src="avator.jpg">
+            </div>
+            <div>
+                <img src="down arrow.png" id="animationArrow" sizes="60%">
+            </div>
         </div>
-        <div id="info">
-            <a href="info.html" style="color: white;text-decoration: none;">info</a>
-        </div>
-        <div class="avator">
-            <img id="img-circle" src="avator.jpg">
-        </div>
-        <div>
-            <img src="down arrow.png" id="animationArrow" sizes="60%">
+        <div class="box2">
+            <div class="album">
+                <img id="pic" alt="pic" src="hello world.jpg">
+                <h4 style="font-family:Anonymous Pro;color: black;text-align: center;">My album</h4>
+            </div>
+            <div class="contact">
+                <div id="icon"><a name="contact">
+                        <br><br>
+                        <a href="mailto:1210705001@qq.com"><img src="mail.jpg" id="img-circle"
+                                style="margin: 10px;"></a>
+                        <a href="https://github.com/Despit" target="blank"><img src="github.jpg" id="img-circle"
+                                style="margin: 10px;"></a>
+                        <a href="http://steamcommunity.com/id/xxl20010127" target="blank"><img src="steam.jpg"
+                                id="img-circle" style="margin: 10px;"></a>
+                </div>
+                <div class="F">
+                    <form action="mailto:1210705001@qq.com" method="POST" enctype="text/plain">
+                        <p style="text-align: center;">Your name <input type="text" name="name" value="Your name">
+                            Your email <input type="email" name="email" value="your email"></p>
+                        <p style="margin: 0 0 0 100px;">Text:</p>
+                        <textarea id='msg' name="text"
+                            style="margin: 0 0 0 175px;width: 367px;height: 87px;text-align: start;">type your text here
+                            </textarea>
+                        <p style="text-align:center;position:relative;"><input type="submit" value="sumbit">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="reset" value="reset"></p>
+                    </form>
+                </div>
+                </a>
+            </div>
+            <div class="bottom">
+                <br>
+                <p>
+                    <h3 style="font-family: Grindelwald;text-align: center;">Copy right<h3
+                            style="font-family: hans;text-align: center;"> © 2019</h3>
+                    </h3>
+                </p>
+            </div>
         </div>
     </div>
-    <div class="box2">
-        <div class="album">
-            album
-        </div>
-    </div>
-
 </body>
 
 </html>

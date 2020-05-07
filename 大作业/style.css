@@ -2,24 +2,58 @@
  * @Author: Eugene
  * @Date: 2019-11-20 08:37:55
  * @LastEditors: Eugene
- * @LastEditTime: 2019-11-28 20:58:01
+ * @LastEditTime: 2019-12-03 18:30:29
  * @FilePath: \大作业\style.css
  */
 
+@font-face {
+    font-family: Grindelwald;
+    src: url(Grindelwald.otf);
+}
+
+@font-face {
+    font-family: EX-hans;
+    src: url(hans.ttf);
+}
+@font-face{
+    font-family: BlackAdder ITC;
+    src: url(ITCBLKAD.TTF);
+}
+
+.navigation {
+    position: relative;
+    width: 1493px;
+    height: 40px;
+    margin-left: 10px;
+    padding-top: 15px;
+    background: white;
+    font-family: Grindelwald;
+    font-size: large;
+}
+
+.slogan{
+    font-family: Grindelwald;
+    font-size: xx-large;
+    font-style: italic;
+    margin-top:30px;
+}
+
+
 #name {
-    font-family: Agency FB;
+    font-family: Grindelwald;
     font-size: xxx-large;
     color: rgb(255, 255, 255);
     width: 400px;
     height: 63px;
-    padding-left: 190px;
-    padding-top: 230px;
+    padding-left: 220px;
+    padding-top: 240px;
     text-align: center;
     position: relative;
 
 }
 
 #info {
+    position: absolute;
     width: 362px;
     height: 45px;
     padding-top: 10px;
@@ -31,17 +65,29 @@
 
 #title {
     background-image: url(portal.jpg);
-    margin: 10px auto;
-    width: 1503px;
-    height: 740px;
+    margin: 0 10px 10px 10px;
+    width: 1493px;
+    height: 730px;
+    padding-top: 10px;
+}
+
+#text1 {
+    position: relative;
+    width: 400px;
+    height: 20px;
+    font-family: EX-hans;
+    color: white;
+    font-size: large;
+    padding-left: 290px;
+    padding-top: 25px;
 }
 
 .avator {
     position: absolute;
     width: 100px;
     height: 100px;
-    left: 180px;
-    top: 200px;
+    left: 125px;
+    top: 300px;
 
 }
 
@@ -52,15 +98,17 @@
 }
 
 .box2 {
-    width: auto;
-    height: 750px;
-    position: relative;
+    width: 1493px;
+    height: 730px;
+    margin: 0 5px 0 5px;
+    position: absolute;
+    background-image: url(portal1.png);
 }
 
 #animationArrow {
     position: absolute;
     padding-left: 470px;
-    padding-top: 240px;
+    padding-top: 230px;
     width: auto;
     height: auto;
     animation: move 1.25s ease-in-out infinite;
@@ -72,35 +120,35 @@
     }
 
     20% {
-        transform: translateY(1.25px);
+        transform: translateY(5px);
     }
 
     30% {
-        transform: translateY(3.75px);
+        transform: translateY(10px);
     }
 
     40% {
-        transform: translateY(6.5px);
+        transform: translateY(20px);
     }
 
     50% {
-        transform: translateY(7.5px);
+        transform: translateY(25px);
     }
 
     60% {
-        transform: translateY(7.5px);
+        transform: translateY(25px);
     }
 
     70% {
-        transform: translateY(6.5px);
+        transform: translateY(7px);
     }
 
     80% {
-        transform: translateY(3.75px);
+        transform: translateY(5px);
     }
 
     90% {
-        transform: translateY(1.25px);
+        transform: translateY(2.5px);
     }
 
     100% {
@@ -110,8 +158,77 @@
 
 .album {
     position: relative;
-    border: 2px solid red;
+    border: 2px solid black;
     width: 650px;
-    height: 433px;
-    margin: 50px 35px;
+    height: 430px;
+    margin: 80px 65px;
+    transition: 0.5s ease;
+}
+
+.contact {
+    position: relative;
+    width: 650px;
+    height: 430px;
+    margin-top: -512px;
+    margin-right: 48px;
+    float: right;
+}
+
+#icon {
+    position: relative;
+    width: 648px;
+    height: 215px;
+    text-align: center;
+}
+
+.F {
+    position: relative;
+    border: 2px solid azure;
+    widows: 650px;
+    height: 215px;
+    background: white;
+    font-family: EX-hans;
+}
+
+.bottom {
+    position: relative;
+    width: 1493px;
+    margin-top: 160px;
+    height: 100px;
+    background: white;
+    box-shadow: 10px #888888
+}
+
+.info_box {
+    width: 1503px;
+    height: 700px;
+    position: relative;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(ur-dragon.jpg);
+}
+
+.info {
+    width: 800px;
+    height: 670px;
+    position: absolute;
+    background: white;
+    margin-left: 340px;
+    margin-top: 20px;
+}
+
+#ugin{
+    width: 392px;
+    height: 666px;
+    background-image: url(profit.jpg);
+    position: absolute;
+    border: 2px solid azure;
+}
+
+#detail{
+    width: 406px;
+    height: 670px;
+    font-family: EX-hans;
+    float: right;
 }
